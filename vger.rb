@@ -5,21 +5,21 @@
 class Vger < Formula
   desc "V'Ger — AI-powered conference video knowledge assimilation system"
   homepage "https://github.com/costap/vger"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/costap/vger/releases/download/v0.5.0/vger_darwin_amd64.tar.gz"
-      sha256 "878186ea0c862b45af1708a28282f632cf9a5a4b8ce96b654afc592f0a18deaa"
+      url "https://github.com/costap/vger/releases/download/v0.6.0/vger_darwin_amd64.tar.gz"
+      sha256 "195ff9dba38896010719d6f9e51bbd8939f6d73bba90d6803a62d566963937b7"
 
       define_method(:install) do
         bin.install "vger"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/costap/vger/releases/download/v0.5.0/vger_darwin_arm64.tar.gz"
-      sha256 "9fdef5c0cb65f9c0aba303d761b01be01ef853c3a75ac81626c50403bb5e6f99"
+      url "https://github.com/costap/vger/releases/download/v0.6.0/vger_darwin_arm64.tar.gz"
+      sha256 "d1e5a3103128c6d3d7ec82bea625f0a4e49832b46734f5699607c5411169341f"
 
       define_method(:install) do
         bin.install "vger"
@@ -29,15 +29,15 @@ class Vger < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/costap/vger/releases/download/v0.5.0/vger_linux_amd64.tar.gz"
-      sha256 "81742a4e62c6d0a49b7bee7dbeebcdd5bbb8bf8a72471982634f98a622255a81"
+      url "https://github.com/costap/vger/releases/download/v0.6.0/vger_linux_amd64.tar.gz"
+      sha256 "111facdc02559a390af027abbeab775bec6f06d4eda64741012719b51d0fda19"
       define_method(:install) do
         bin.install "vger"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/costap/vger/releases/download/v0.5.0/vger_linux_arm64.tar.gz"
-      sha256 "5524713e5b5af5525d73308f0d2f77c3c6915ae7bcb9e762e8a3a3e7f933790f"
+      url "https://github.com/costap/vger/releases/download/v0.6.0/vger_linux_arm64.tar.gz"
+      sha256 "e33bff189436ec8ae257ae88f7dfd7ec7f530299ae42a7f5690b98552f097b04"
       define_method(:install) do
         bin.install "vger"
       end
